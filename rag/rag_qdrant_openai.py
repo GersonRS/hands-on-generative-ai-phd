@@ -17,7 +17,7 @@ chunks = splitter.split_documents(docs)
 
 # # 3. Gerar embeddings e armazenar
 embeddings = OpenAIEmbeddings()
-qdrant = Qdrant.from_documents(chunks, embeddings, location=":memory:", collection_name="meus_docs")
+qdrant = Qdrant.from_documents(chunks, embeddings, location=":memory:", collection_name="minha_bio")
 
 # # 4. Criar pipeline RAG
 qa = RetrievalQA.from_chain_type(llm=ChatOpenAI(), retriever=qdrant.as_retriever())

@@ -8,7 +8,7 @@ client = OpenAI(base_url="https://openrouter.ai/api/v1", api_key=os.getenv("OPEN
 
 completion = client.chat.completions.create(
     extra_body={},
-    model="deepseek/deepseek-v3-base:free",
+    model="deepseek/deepseek-r1:free",
     messages=[{"role": "user", "content": "O que seria uma IA?"}],
 )
 print(completion.choices[0].message.content)
