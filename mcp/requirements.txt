@@ -1,0 +1,7 @@
+mcp
+pydantic_ai
+fastapi
+fastmcp
+langgraph
+langchain-mcp-tools
+langchain-openai

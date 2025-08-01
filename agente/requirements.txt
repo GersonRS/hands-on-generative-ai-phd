@@ -1,3 +1,5 @@
+langchain-community
 langchain
 duckduckgo-search
 openai
+langchain_openai
